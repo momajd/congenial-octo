@@ -91,3 +91,8 @@ footer {
         height: 70%;
     }
 }
+
+/*added*/
+#portfolio {
+  padding-top: 14px;
+}
