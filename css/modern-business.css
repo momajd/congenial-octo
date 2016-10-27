@@ -17,6 +17,8 @@ body {
 
 .img-portfolio {
     margin-bottom: 30px;
+    width: 345px;
+    height: 230px;
 }
 
 .img-hover:hover {
