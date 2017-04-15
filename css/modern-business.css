@@ -44,6 +44,19 @@ header.carousel .fill {
     background-size: cover;
 }
 
+header .carousel-caption {
+  font-size: 30px;
+}
+
+header .title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+}
+
+header .sub-title {
+  font-size: 54px;
+}
+
 /* 404 Page Styles */
 
 .error-404 {
