@@ -20,6 +20,7 @@
     <!-- Custom Fonts -->
     <script src="https://use.fontawesome.com/1cd79baff9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Libre+Baskerville" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand company-name" href="#myCarousel">Modern Business</a>
+                <a class="navbar-brand company-name" href="#home">Modern Business</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,52 +68,29 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <!-- Header -->
+    <header id="home">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('http://res.cloudinary.com/dfqqsmub8/image/upload/v1477615711/hamidcontracting/background1.jpg');"></div>
-                <div class="carousel-caption">
-                    <p class="title company-name">Modern Business</p>
-                    <p>PROFESSIONAL CONSTRUCTION - LICENSED &amp; INSURED</p>
+        <div class="welcome-text">
+          <div class="title">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="company-name">Modern Business</span>
+          </div>
 
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://res.cloudinary.com/dfqqsmub8/image/upload/v1477615712/hamidcontracting/background2.jpg');"></div>
-                <div class="carousel-caption">
-                    <p class="sub-title">OVER 30 YEARS</p>
-                    <p>OF EXPERIENCE IN THE INDUSTRY</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://res.cloudinary.com/dfqqsmub8/image/upload/v1477615716/hamidcontracting/background3.jpg');"></div>
-                <div class="carousel-caption">
-                  <p class="sub-title">QUALITY CONSTRUCTION</p>
-                  <p>BASED IN SOUTH JERSEY</p>
-                </div>
-            </div>
+          <div class="sub-title">RESIDENTIAL • COMMERCIAL</div>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
+        <!-- <div class="overlay"></div> -->
+
+        <video autoplay="" loop="" muted="">
+            <source src="https://s3.amazonaws.com/insanfran/construction.mp4" type="video/mp4">
+            <source src="https://s3.amazonaws.com/insanfran/construction.webm" type="video/webm">
+            Your browser does not support HTML5 video please upgrade for the best experience possible
+        </video>
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- About  -->
         <div id="about" class="section-container">
@@ -295,7 +273,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
               $('html,body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 15
               }, 1000);
               return false;
             }
