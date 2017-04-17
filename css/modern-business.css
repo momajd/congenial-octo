@@ -25,10 +25,15 @@ body {
     opacity: 0.8;
 }
 
+.navbar-brand {
+  font-family: 'Libre Baskerville', serif;
+}
+
 /* Home Page*/
 
 header video {
     position: fixed;
+    margin-top: 50px;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -72,17 +77,22 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
 
+.welcome-text a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 header .title {
   font-family: 'Libre Baskerville', serif;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 header .sub-title {
   font-family: 'Cinzel', serif;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .container-fluid {
