@@ -87,12 +87,12 @@ header {
 
 header .title {
   font-family: 'Libre Baskerville', serif;
-  font-size: 48px;
+  font-size: 44px;
 }
 
 header .sub-title {
   font-family: 'Cinzel', serif;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .container-fluid {
