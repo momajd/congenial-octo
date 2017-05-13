@@ -38,10 +38,9 @@ header video {
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    /* max-width: 1200px; */
     max-width: 4000px;
-    width: auto;
-    height: auto;
+    /*width: auto;*/
+    /*height: auto;*/
     z-index: -100;
     transform: translateX(-50%) translateY(-55%);
     background-size: cover;
@@ -140,12 +139,34 @@ footer {
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:750px) {
     .img-portfolio {
         margin-bottom: 15px;
     }
 
-    header.carousel .carousel {
-        height: 70%;
+    header video {
+      display: none;
     }
+
+    .welcome-text {
+      max-width: 400px;
+    }
+
+    header .title {
+      font-size: 30px;
+    }
+
+    header .sub-title {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+    }
+
+    .mobile-background {
+      height: 100%;
+      background-image: url(../images/mobile_background.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
 }
